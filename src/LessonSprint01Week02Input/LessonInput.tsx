@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import {FullInput} from "./FullInput";
+import {MyInput} from "./MyInput";
+import {MyButton} from "./MyButton";
 
 export const LessonInput = () => {
 
@@ -9,14 +11,29 @@ export const LessonInput = () => {
         {message: "Message3"},
     ])
 
-    const addMessage = (argument:string) => {
-        setMessages([{message: argument},...messages])
-    }
+    // Version of FullInput
+    // const addMessage = (argument:string) => {
+    //     setMessages([{message: argument},...messages])
+    // }
 
+    // Version of separate Impute and separate Button
+    const addMessage = () => {
+        setMessages([{message: text},...messages])
+        setText("")
+    }
+    let [text, setText] =useState("")
+    // console.log(text)
 
     return (
         <div>
-            <FullInput addMessage={addMessage}/>
+            {/*Version of FullInput*/}
+            {/*<FullInput addMessage={addMessage}/>*/}
+
+            {/*Version of separate Impute and separate Button*/}
+            <MyInput text={text} setText={setText}/>
+            <MyButton addMessage={addMessage}/>
+
+
             {messages.map((el,ind)=><p key={ind}>{el.message}</p>)}
         </div>
     )
