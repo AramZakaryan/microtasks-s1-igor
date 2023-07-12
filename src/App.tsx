@@ -8,6 +8,8 @@ import {NewComponent} from "./LessonSprint01Week01Map/NewComponent";
 import {LessonButton} from "./LessonSprint01Week01Button/LessonButton";
 import {Button} from "./LessonSprint01Week01Button/Button";
 import {LessonState} from "./LessonSprint01Week01useState/LessonUseState";
+import {LessonFilter} from "./LessonSprint01Week01Filter/LessonFilter";
+import {LessonInput} from "./LessonSprint01Week02Input/LessonInput";
 
 function App() {
     // let studentsList = [
@@ -30,21 +32,28 @@ function App() {
 
 
     return (<>
-        {/*Lesson: 01-Sprint, Week-1, Components*/}
+        {/*Lesson: Sprint-01, Week-1, Components*/}
         {/*<Header title={"This is HeaderTitle"}/>*/}
         {/*<Body titleForBody={"This is BodyTitle"}/>*/}
         {/*<Footer titleForFooter={"This is FooterTitle"}/>*/}
 
-        {/*Lesson: 01-Sprint, Week-1, Map*/}
+        {/*Lesson: Sprint-01, Week-1, Map*/}
         {/*<NewComponent students={studentsList}/>*/}
 
-        {/*Lesson: 01-Sprint, Week-1, Button*/}
+        {/*Lesson: Sprint-01, Week-1, Button*/}
         {/*<LessonButton/>*/}
         {/*<Button name={"YoutubeChanel-1"} callback={() => buttonFoo("Vasya", 18, "Minsk")}/> /!*Step 02*!/*/}
         {/*<Button name={"YoutubeChanel-2"} callback={() => buttonFoo("Ivan", 34, "Yerevan")}/>*/}
 
-        {/*Lesson: 01-Sprint, Week-1, useState*/}
-        <LessonState/>
+        {/*Lesson: Sprint-01, Week-1, useState*/}
+        {/*<LessonState/>*/}
+
+        {/*Lesson: Sprint-01, Week-1, Filter*/}
+        {/*<LessonFilter/>*/}
+
+        {/*Lesson: Sprint-01, Week-2, Input*/}
+        <LessonInput/>
+
     </>)
 }
 
