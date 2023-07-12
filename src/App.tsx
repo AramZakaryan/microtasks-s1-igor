@@ -7,6 +7,7 @@ import {Footer} from "./site/Footer";
 import {NewComponent} from "./LessonSprint01Week01Map/NewComponent";
 import {LessonButton} from "./LessonSprint01Week01Button/LessonButton";
 import {Button} from "./LessonSprint01Week01Button/Button";
+import {LessonState} from "./LessonSprint01Week01useState/LessonUseState";
 
 function App() {
     // let studentsList = [
@@ -20,12 +21,12 @@ function App() {
     // ]
 
     // Lesson: 01-Sprint, Week-1, Button
-    const buttonFoo = (subscriber: string, age: number, address: string) => { // Step 01
-        console.log("You've pushed btn1.",
-            " I'm " + subscriber + ". ",
-            "And I'm " + age + " years old. ",
-            "I live in " + address)
-    }
+    // const buttonFoo = (subscriber: string, age: number, address: string) => { // Step 01
+    //     console.log("You've pushed btn1.",
+    //         " I'm " + subscriber + ". ",
+    //         "And I'm " + age + " years old. ",
+    //         "I live in " + address)
+    // }
 
 
     return (<>
@@ -39,8 +40,11 @@ function App() {
 
         {/*Lesson: 01-Sprint, Week-1, Button*/}
         {/*<LessonButton/>*/}
-        <Button name={"YoutubeChanel-1"} callback={() => buttonFoo("Vasya", 18, "Minsk")}/> {/*Step 02*/}
-        <Button name={"YoutubeChanel-2"} callback={() => buttonFoo("Ivan", 34, "Yerevan")}/>
+        {/*<Button name={"YoutubeChanel-1"} callback={() => buttonFoo("Vasya", 18, "Minsk")}/> /!*Step 02*!/*/}
+        {/*<Button name={"YoutubeChanel-2"} callback={() => buttonFoo("Ivan", 34, "Yerevan")}/>*/}
+
+        {/*Lesson: 01-Sprint, Week-1, useState*/}
+        <LessonState/>
     </>)
 }
 
