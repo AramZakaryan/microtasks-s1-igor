@@ -31,7 +31,7 @@ export const LessonInput = () => {
 
             {/*Version of separate Impute and separate Button*/}
             <MyInput text={text} setText={setText}/>
-            <MyButton addMessage={addMessage}/>
+            <MyButton buttonCallback={addMessage}/>
 
 
             {messages.map((el,ind)=><p key={ind}>{el.message}</p>)}

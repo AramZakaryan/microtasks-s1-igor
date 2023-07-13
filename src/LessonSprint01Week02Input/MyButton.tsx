@@ -1,13 +1,13 @@
 import React, {FC} from 'react';
 
 type MyButtonPropsType = {
-    addMessage: ()=>void
+    buttonCallback: ()=>void
 
 }
 export const MyButton :React.FC<MyButtonPropsType>= (props) => {
 
     const onClickButtonHandler = () => {
-        props.addMessage()
+        props.buttonCallback()
         // setText("")
     }
     return (
